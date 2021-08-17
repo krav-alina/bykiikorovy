@@ -1,3 +1,4 @@
+//сравнение двух объектов
 function compare (obj1, obj2) {
     var equal = false
     if(obj1 == obj2) {
@@ -5,7 +6,7 @@ function compare (obj1, obj2) {
     }
     return equal;
 }
-
+//функция для проверки чего-то в массиве
 function isInArr (obj, arr) {
     var res = false;
     for (var i=0;i<arr.length;i++) {
@@ -18,7 +19,7 @@ function isInArr (obj, arr) {
     return res;
     return indexes;
 }
- 
+//проверяем, есть ли "Коровы", то есть совпавшие цифры 
 function cows (computerN, playerN) {
     playerN = playerN.toString()
     playerN = playerN.split('')
@@ -30,7 +31,7 @@ function cows (computerN, playerN) {
     } 
     return cow
 } 
-
+//проверяем есть ли в числе игрока "Бык", то есть цифра, которая не просто совпадает, а совпадает и ее место
 function bulls (computerN, playerN) {
     playerN = playerN.toString()
     playerN = playerN.split('')
@@ -44,13 +45,13 @@ function bulls (computerN, playerN) {
     }
     return 4-smth
 }
-
+//проверка на длину
 function length (playerN) {
     playerN = playerN.toString()
     playerN = playerN.split('')
     return playerN.length
 }
-
+//проверяем уникальны ли цифры в числе
 function unique (playerN) {
     playerN = playerN.toString()
     playerN = playerN.split('')
@@ -61,7 +62,7 @@ function unique (playerN) {
         return true
     }
 }
-
+//функция загадывания рандомного числа в 4 цифры
 function beginning () {
     var number = Math.floor(1000 + Math.random() * 9000)
     //reactions.answer(number)
